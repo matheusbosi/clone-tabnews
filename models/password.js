@@ -1,7 +1,6 @@
 import bcryptjs from "bcryptjs";
 
 async function hash(password) {
-  console.log(process.env.PEPPER);
   const rounds = getNumbersOfRounds();
   const spicyPassword = pepperPassword(password);
 
